@@ -26,6 +26,10 @@ namespace Boris.JasperLeonard.Web
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr")
                 .Include("~/Content/js/vendor/modernizr-2.6.2.js"));
+            bundles.Add(new ScriptBundle("~/bundles/slideshow")
+                .Include("~/Content/js/vendor/jquery-1.9.0.js")
+                .Include("~/Content/js/vendor/jquery.mousewheel.js")
+                .Include("~/Content/js/slideshow.js"));
 
             bundles.Add(new StyleBundle("~/bundles/ink")
                 .Include("~/Content/css/ink*"));

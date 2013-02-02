@@ -147,6 +147,8 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\normalize.css" />
     <Content Include="Content\img\title.jpg" />
+    <Content Include="Content\js\slideshow.js" />
+    <Content Include="Content\js\vendor\jquery-1.9.0.js" />
     <Content Include="Content\js\vendor\jquery.mousewheel.js" />
     <Content Include="Content\js\vendor\modernizr-2.6.2.js" />
     <Content Include="Content\slideshows\documentary\002001_MG_1002.jpg" />
