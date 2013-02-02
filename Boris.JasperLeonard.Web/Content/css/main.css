@@ -23,11 +23,13 @@
 }
 
 .slideshow {
-	background-color: blue;
 	white-space: nowrap;
 	float: left;
 	margin-left: 15em;
+	font-size: 0;
 }
 .slideshow img {
-	float: left;
+	display: inline;
+	padding: 0;
+	margin: 0;
 }
