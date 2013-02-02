@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8E78E6
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boris.JasperLeonard.Business", "Boris.JasperLeonard.Business\Boris.JasperLeonard.Business.csproj", "{4924FF3D-4A27-4820-86A3-D0CB7C9D3D18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{2E2F49ED-C778-46BB-BB7F-4001ECC9AB01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E2F49ED-C778-46BB-BB7F-4001ECC9AB01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E2F49ED-C778-46BB-BB7F-4001ECC9AB01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4924FF3D-4A27-4820-86A3-D0CB7C9D3D18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4924FF3D-4A27-4820-86A3-D0CB7C9D3D18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4924FF3D-4A27-4820-86A3-D0CB7C9D3D18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4924FF3D-4A27-4820-86A3-D0CB7C9D3D18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

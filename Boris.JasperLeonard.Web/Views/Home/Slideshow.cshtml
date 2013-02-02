@@ -1,0 +1,11 @@
+﻿@model Boris.JasperLeonard.Web.Models.SlideshowModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h4>Images in this category:</h4>
+@foreach(string path in Model.ImagePaths)
+{
+  <img src="@path"/>
+}

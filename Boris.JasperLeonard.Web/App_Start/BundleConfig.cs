@@ -7,6 +7,11 @@ namespace Boris.JasperLeonard.Web
         // For more information on Bundling, visit http://go.microsoft.com/fwlink/?LinkId=254725
         public static void RegisterBundles(BundleCollection bundles)
         {
+            bundles.Add(new StyleBundle("~/bundles/css")
+                .Include("~/Content/css/normalize.css")
+                .Include("~/Content/css/main.css")
+            );
+
             //bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
             //            "~/Scripts/jquery-{version}.js"));
 
@@ -19,12 +24,11 @@ namespace Boris.JasperLeonard.Web
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/umama")
+            bundles.Add(new ScriptBundle("~/bundles/modernizr")
                 .Include("~/Content/js/vendor/modernizr-2.6.2.js"));
 
-            bundles.Add(new StyleBundle("~/bundles/css")
-                .Include("~/Content/css/main.css")
-                .Include("~/Content/css/normalize.css"));
+            bundles.Add(new StyleBundle("~/bundles/ink")
+                .Include("~/Content/css/ink*"));
 
             //bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
             //            "~/Content/themes/base/jquery.ui.core.css",
