@@ -1,15 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using System.IO;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace Boris.JasperLeonard.Business
 {
     public class SlideshowManager
     {
-        public static string ContentPath { get; set; }
-        
-        public List<string> GetImagePaths(string showname)
+        private readonly string slideshowsPath;
+
+        public SlideshowManager(string slideshowsPath)
         {
-            var imagePaths = new List<string>();
-            return imagePaths;
+            this.slideshowsPath = slideshowsPath;
+        }
+
+        public List<string> GetImageNames(string showname)
+        {
+            var showDir = new DirectoryInfo(Path.Combine(slideshowsPath, showname));
+
+            if (!showDir.Exists) { return new List<string>(); }
+
+            var images = showDir.GetFiles("*.jpg");
+            return images.Select(i => i.Name).ToList();
         }
     }
 }

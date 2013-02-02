@@ -1,11 +1,17 @@
-﻿body {}
-
-.navigation {
-	float: left;
-	height: 100%;
-	padding: 1.1em 1.9em 1em 1.1em;
+﻿body {
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
-.logo {
+.navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background-color: white;
+	padding: 1.1em 1.9em 1em 1.1em;
+	z-index: 10;
+}
+.navigation .logo {
 	margin-bottom: 2em;
 }
 .navigation a 
@@ -17,7 +23,11 @@
 }
 
 .slideshow {
-	float: left;
 	background-color: blue;
-	height: 100%;
+	white-space: nowrap;
+	float: left;
+	margin-left: 15em;
+}
+.slideshow img {
+	float: left;
 }

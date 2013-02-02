@@ -147,7 +147,16 @@
     <Content Include="Content\css\main.css" />
     <Content Include="Content\css\normalize.css" />
     <Content Include="Content\img\title.jpg" />
+    <Content Include="Content\js\vendor\jquery.mousewheel.js" />
     <Content Include="Content\js\vendor\modernizr-2.6.2.js" />
+    <Content Include="Content\slideshows\documentary\002001_MG_1002.jpg" />
+    <Content Include="Content\slideshows\documentary\003001_MG_2255.jpg" />
+    <Content Include="Content\slideshows\documentary\004001_MG_6623.jpg" />
+    <Content Include="Content\slideshows\documentary\007001_MG_1692.jpg" />
+    <Content Include="Content\slideshows\documentary\008001_MG_1321.jpg" />
+    <Content Include="Content\slideshows\documentary\011001_MG_5926.jpg" />
+    <Content Include="Content\slideshows\documentary\012001_MG_5942.jpg" />
+    <Content Include="Content\slideshows\documentary\014001_MG_7432.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
