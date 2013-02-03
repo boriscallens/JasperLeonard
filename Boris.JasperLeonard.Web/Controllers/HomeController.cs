@@ -17,14 +17,14 @@ namespace Boris.JasperLeonard.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("Slideshow", new {showname = "intro"});
         }
         public ActionResult Slideshow(string showname)
         {
             var model = new SlideshowModel();
             model.ShowName = showname;
             model.ImagePaths = GetImagePaths(showname).ToList();
-
+            model.SlideshowNames = slideshowManager.SlideshowNames;
             return View(model);
         }
 
@@ -34,11 +34,5 @@ namespace Boris.JasperLeonard.Web.Controllers
             var slideshowsPath = Url.Content(@"/Content/slideshows");
             return slideshowManager.GetImageNames(showname).Select(n => string.Format(format, slideshowsPath, showname, n));
         }
-
-        //public ActionResult Video()
-        //{
-        //    http://vimeo.com/53361182
-        //}
-
     }
 }

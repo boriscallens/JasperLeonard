@@ -1,0 +1,12 @@
+﻿@model Boris.JasperLeonard.Web.Models.SlideshowModel
+
+<div class="links">
+ @foreach (var name in Model.SlideshowNames)
+ {
+    @Html.ActionLink(name, "SlideShow", "Home", new { showname = name }, null)
+ }
+ @using (Html.BeginForm(null, null, null, FormMethod.Post, new { @class = "ink-form block"}))
+ {
+    @Html.TextBoxFor(model => model.NewShowName)
+ }
+</div>

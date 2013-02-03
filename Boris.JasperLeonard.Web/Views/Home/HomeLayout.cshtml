@@ -1,0 +1,48 @@
+﻿@using Boris.JasperLeonard.Web.Models
+<!DOCTYPE html lang="eng">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="Jasper Léonard's online gallery">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+	
+		<!-- Favicon.ico placeholder -->
+		<link rel="shortcut icon" href="imgs/ink-favicon.ico">
+		
+		<!-- Apple icon placeholder -->
+		<link rel="apple-touch-icon-precomposed" href="imgs/touch-icon.57.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="imgs/touch-icon.72.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="imgs/touch-icon.114.png">
+
+		<!-- Apple splash screen placeholder -->
+		<link rel="apple-touch-startup-image" href="imgs/splash.320x460.png" media="screen and (min-device-width: 200px) and (max-device-width: 320px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="imgs/splash.768x1004.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="imgs/splash.1024x748.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+		
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/bundles/css")
+</head>
+<body>
+<!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+    <div class="navigation">
+        <img class="logo" src="@Url.Content("~/Content/img/title.jpg")" alt="Logo leading to Home page"/>
+        @RenderPage("~/Views/Home/SlideShowLinks.cshtml", new SlideshowModel())
+    </div>
+
+    <div class="slideshow">
+      @RenderBody()
+    </div>
+    
+    @RenderPage("~/Views/Shared/GoogleAnalitics.cshtml")
+    @Scripts.Render("~/bundles/slideshow")
+</body>
+</html>

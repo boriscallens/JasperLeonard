@@ -1,0 +1,8 @@
+﻿@model Boris.JasperLeonard.Web.Models.SlideshowModel
+
+@foreach (var name in Model.SlideshowNames)
+{
+  @Html.ActionLink(name, "SlideShow", "Home", new { showname = name }, null)
+}
+
+@Html.ActionLink("video", "Video")

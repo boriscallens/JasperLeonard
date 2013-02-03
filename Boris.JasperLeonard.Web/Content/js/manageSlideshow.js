@@ -1,0 +1,4 @@
+﻿$(function () {
+    
+    var links = $(".links");
+});
